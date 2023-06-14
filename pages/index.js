@@ -1,59 +1,155 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Widgets from '../components/Widgets';
+// import styles from '../styles/Home.module.css';
+import { Alert } from 'flowbite-react';
+import { Tabs } from 'flowbite-react';
+import {
+  MainComponent,
+  Button,
+  Page,
+  Navbar,
+  Posts,
+  Hero,
+  Videos,
+} from 'mynewslds-library';
+import 'mynewslds-library/dist/output.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className="container mx-auto">
+      {/* <Alert color="info">Alert!</Alert> */}
+      <script src="https://cdn.tailwindcss.com"></script>
+      <Header />
+      <div className="grid grid-cols-1 gap-4 bg-blue-50">
+        {/* <div className="grid-cols-1 shadow-md">
+          <Widgets title="Recently Active Members" type="members" />
+          <Widgets title="Groups" type="groups" />
+        </div> */}
+        {/* <div className="grid-cols-2 md:grid-cols-1 gap-2">
+          <div>
+            <h3>Share whats there in your mind</h3>
+          </div>
+          <div>
+            <Tabs.Group aria-label="Default tabs" style="default">
+              <Tabs.Item active title="All updates">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p>
+                    This is some placeholder content the
+                    <span className="font-medium text-gray-800 dark:text-white">
+                      Profile tab's associated content
+                    </span>
+                    . Clicking another tab will toggle the visibility of this
+                    one for the next. The tab JavaScript swaps classes to
+                    control the content visibility and styling.
+                  </p>
+                </p>
+              </Tabs.Item>
+              <Tabs.Item title="Connections">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p>
+                    This is some placeholder content the
+                    <span className="font-medium text-gray-800 dark:text-white">
+                      Dashboard tab's associated content
+                    </span>
+                    . Clicking another tab will toggle the visibility of this
+                    one for the next. The tab JavaScript swaps classes to
+                    control the content visibility and styling.
+                  </p>
+                </p>
+              </Tabs.Item>
+              <Tabs.Item title="Groups">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p>
+                    This is some placeholder content the
+                    <span className="font-medium text-gray-800 dark:text-white">
+                      Settings tab's associated content
+                    </span>
+                    . Clicking another tab will toggle the visibility of this
+                    one for the next. The tab JavaScript swaps classes to
+                    control the content visibility and styling.
+                  </p>
+                </p>
+              </Tabs.Item>
+              <Tabs.Item title="Following">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p>
+                    This is some placeholder content the
+                    <span className="font-medium text-gray-800 dark:text-white">
+                      Settings tab's associated content
+                    </span>
+                    . Clicking another tab will toggle the visibility of this
+                    one for the next. The tab JavaScript swaps classes to
+                    control the content visibility and styling.
+                  </p>
+                </p>
+              </Tabs.Item>
+            </Tabs.Group>
+          </div>
+          <div>hello world</div>
+        </div> */}
+        {/* <div className="grid-cols-1">
+          <Widgets title="Upcoming Community Events" />
+          <Widgets title="Upcoming Meetups" />
+          <Widgets title="Benefits Near Me" />
+          <Widgets title="Complete Your Profile" />
+        </div> */}
+        <div className="flex mx-auto m-24 align-items-center">
+          <Hero
+            className="font-bold text-lg flex"
+            image={
+              'https://next-cdn.codementor.io/images/cm-events/homepage/hero-image-dkt.svg'
+            }
+            label="Attend and host virtual events for developers"
+            subtitle="Codementor Events is a developer community and virtual events
+            platform where developers learn and share new tools, technical
+            concepts, and career tips."
+          ></Hero>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a href="https://next.new" target="_blank" rel="noopener noreferrer">
-          Created with&nbsp;<b>next.new</b>&nbsp;⚡️
-        </a>
-      </footer>
+        <div className="grid grid-cols-1 mx-auto">
+          <h1 className="font-bold text-lg">
+            Discover upcoming virtual events
+          </h1>
+          <div className="grid grid-cols-3 md:grid-cols-3 border-2 border-color-gray-100 shadow-md">
+            <div className="m-2 p-2 border-2 border-color-pink-100">
+              <h3>Efficient iOS App Development with Bazel</h3>
+              <div></div>
+            </div>
+            <div className="m-2 p-2 border-2 border-color-pink-100">
+              <h3>The Self-Taught Programmers Path Way</h3>
+              <div></div>
+            </div>
+            <div className="m-2 p-2 border-2 border-color-pink-100">
+              <h3>Distributed Systems Architectural Patterns</h3>
+              <div></div>
+            </div>
+          </div>
+          <div className="font-bold text-color-pink-100">
+            See more events ->
+          </div>
+          <h1 className="font-bold text-lg">
+            Watch recordings of popular past events
+          </h1>
+          <div className="grid grid-cols-3 md:grid-cols-3 border-2 border-color-gray-100 shadow-md">
+            <div className="m-2 p-2 border-2 border-color-pink-100">
+              <h3>Efficient iOS App Development with Bazel</h3>
+              <div></div>
+            </div>
+            <div className="m-2 p-2 border-2 border-color-pink-100">
+              <h3>The Self-Taught Programmers Path Way</h3>
+              <div></div>
+            </div>
+            <div className="m-2 p-2 border-2 border-color-pink-100">
+              <h3>Distributed Systems Architectural Patterns</h3>
+              <div></div>
+            </div>
+          </div>
+          <div className="font-bold text-color-pink-100">
+            See more events ->
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
