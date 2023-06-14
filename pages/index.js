@@ -1,9 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Widgets from '../components/Widgets';
-// import styles from '../styles/Home.module.css';
-import { Alert } from 'flowbite-react';
-import { Tabs } from 'flowbite-react';
+// import { Alert } from 'flowbite-react';
 import {
   MainComponent,
   Button,
