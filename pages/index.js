@@ -106,20 +106,20 @@ export default function Home() {
             concepts, and career tips."
           ></Hero>
         </div>
-        <div className="grid grid-cols-1 mx-auto">
+        <div className="grid grid-cols-1 mx-auto border-2 border-color-gray-100 shadow-md m-5 p-5">
           <h1 className="font-bold text-lg">
             Discover upcoming virtual events
           </h1>
-          <div className="grid grid-cols-3 md:grid-cols-3 border-2 border-color-gray-100 shadow-md">
-            <div className="m-2 p-2 border-2 border-color-pink-100">
+          <div className="grid grid-cols-3 md:grid-cols-3 ">
+            <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
               <h3>Efficient iOS App Development with Bazel</h3>
               <div></div>
             </div>
-            <div className="m-2 p-2 border-2 border-color-pink-100">
+            <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
               <h3>The Self-Taught Programmers Path Way</h3>
               <div></div>
             </div>
-            <div className="m-2 p-2 border-2 border-color-pink-100">
+            <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
               <h3>Distributed Systems Architectural Patterns</h3>
               <div></div>
             </div>
@@ -130,16 +130,16 @@ export default function Home() {
           <h1 className="font-bold text-lg">
             Watch recordings of popular past events
           </h1>
-          <div className="grid grid-cols-3 md:grid-cols-3 border-2 border-color-gray-100 shadow-md">
-            <div className="m-2 p-2 border-2 border-color-pink-100">
+          <div className="grid grid-cols-3 md:grid-cols-3 ">
+            <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
               <h3>Efficient iOS App Development with Bazel</h3>
               <div></div>
             </div>
-            <div className="m-2 p-2 border-2 border-color-pink-100">
+            <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
               <h3>The Self-Taught Programmers Path Way</h3>
               <div></div>
             </div>
-            <div className="m-2 p-2 border-2 border-color-pink-100">
+            <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
               <h3>Distributed Systems Architectural Patterns</h3>
               <div></div>
             </div>
