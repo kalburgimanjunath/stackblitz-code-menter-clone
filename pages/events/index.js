@@ -122,7 +122,7 @@ export default function Events() {
   return (
     <div className="container mx-auto">
       {/* <Alert color="info">Alert!</Alert> */}
-      <script src="https://cdn.tailwindcss.com"></script>
+
       <Header />
       <div className="grid grid-cols-1 gap-4 bg-blue-50">
         {/* <div className="grid-cols-1 shadow-md">
@@ -219,7 +219,7 @@ export default function Events() {
                 return (
                   <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
                     <h3>
-                      <Link href={`./event/${item.id}`}>
+                      <Link href={`./events/${item.id}`}>
                         {item.description + item.id}
                       </Link>
                     </h3>
@@ -264,7 +264,7 @@ export default function Events() {
                 return (
                   <div className="m-2 p-2 border-2 border-color-pink-100 hover:bg-gray-100 hover:border-pink-500 hover:cursor-pointer">
                     <h3>
-                      <Link href={`./event/${item.id}`}>
+                      <Link href={`./events/${item.id}`}>
                         {item.description + item.id}
                       </Link>
                     </h3>

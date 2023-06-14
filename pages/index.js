@@ -1,6 +1,4 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Widgets from '../components/Widgets';
+import { Header, Footer, Widgets } from '../components/';
 // import { Alert } from 'flowbite-react';
 import {
   MainComponent,
@@ -18,7 +16,6 @@ export default function Home() {
     <div className="container mx-auto">
       {/* <Alert color="info">Alert!</Alert> */}
       <script src="https://cdn.tailwindcss.com"></script>
-      <Header />
       <div className="grid grid-cols-1 gap-4 bg-blue-50">
         {/* <div className="grid-cols-1 shadow-md">
           <Widgets title="Recently Active Members" type="members" />
@@ -147,7 +144,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
